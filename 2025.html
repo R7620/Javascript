@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>finding sum two no</h3>
+    <label for="firstnum">first no</label><br>
+
+    <input type="text" id="firstnum"><br>
+
+    <label for="secnum"> second no</label><br>
+
+    <input type="text"  id="secnum"><br>
+    <br>
+
+    <button onclick="addition()">Addition()</button>
+    <br>
+    <output id="op"></output> 
+    <script>
+    // function defination 
+        function addition()
+        {
+            let x,y ,res;//local var
+            //data coll
+            x= +firstnum.value
+            y= +secnum.value
+            res=x+y;
+            //display output()
+            // document.write("sum is " +res);
+            // alert("sum is "+res);
+            // console.log("sum is "+res);
+            op.value="sum is "+res;
+
+        }
+    </script>
+
+
+
+</body>
+</html>
