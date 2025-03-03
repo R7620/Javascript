@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter the table</h1>
+    <input type="text" id="number">
+    <button onclick="gettable()">print</button><br>
+    <output id="op"></output>
+
+
+
+    <script>
+
+        function gettable(){
+            let n ,res ;
+            n=+number.value;
+            for(let i=1;i<=10;i++){
+                res=i*n;
+                op.innerHTML += n+"*"+i+"="+res+"<br>";
+            }
+
+        }
+    </script>
+</body>
+</html>
